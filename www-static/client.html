@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Minimal Client for chunked http stream</title>
+
+</head>
+<body>
+Minimal Client for chunked http stream in JS (and HTML)
+<script>
+console.log("PAINT.");
+var request = new XMLHttpRequest();
+request.open("GET", "http://127.0.0.1:50123/tenseconds");
+request.onprogress = function () {
+    console.log("PROGRESS:", request.responseText)
+}
+console.log("open.");
+request.send();
+console.log("sent.");
+</script>
+</body>
+</html>
