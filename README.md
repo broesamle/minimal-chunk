@@ -28,4 +28,4 @@ streaming on ("127.0.0.1", 50123)
 
 Then in another terminal:
 
-`curl -v http://localhost:50123/tenseconds`
+`curl -v http://localhost:50123/`
